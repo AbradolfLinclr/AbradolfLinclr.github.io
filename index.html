@@ -1,0 +1,391 @@
+<!doctype html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="bootstrap-3.3.7\dist\css\bootstrap.css">
+<link rel="stylesheet" type="text/css" href="jQuery-DataTables\datatables.css">
+<link rel="stylesheet" type="text/css" href="jQuery-DataTables\datatables.min.css">
+<link rel="stylesheet" type="text/css" href="intro.js-2.5.0\introjs.css">
+<link rel="stylesheet" type="text/css" href="intro.js-2.5.0\themes\introjs-nazanin.css">
+<link rel="stylesheet" type="text/css" href="main.css">
+ 
+
+</head>
+
+<meta name = "viewport" content ="width=device-width, initial-scale=1.0" >
+
+<body >
+  
+                                                            <!-- UPPER NAVBAR -->
+      <div class ="row" >
+        <nav class ="navbar" id="scroll">
+          <ul id = "step1">
+            <div class = "col-xs-1  p40" style="padding-left:30px"><h1><span id ="block">Cumulative</span></h1></div> 
+            <div class = "col-xs-6 col-xs-offset-2 p40"><h3>NAVAIR Small Innovation Research (SBIR) / Small Business Technology Transfer (STTR) Portfolio Analysis</h2></div>
+            <div class = "col-xs-1 col-xs-offset-2 p20" id = "step2"><h4><span id ="yellow">Date as of:<br>4/14/2017</span></h4></div>
+          </ul> 
+        </nav>
+      </div>
+      
+                                                            <!-- LOWER NAVBAR -->
+                                                             <!-- COMBO BOXES -->
+      <div class ="row" id = "step3" >
+        <nav class ="navbar" id="navbar2">
+          <ul>
+            <div class = "col-xs-1 col-xs-offset-1 p15" id= "step4">
+              <h3>FY<br>
+                <select>
+                  <option value="ALL">ALL</option>
+                  <option value="NONE">NONE</option>
+                </select>
+              </h3>
+            </div>
+            
+        <div class = "col-xs-1 p15"  id= "step5">
+          <h3>Program<br>
+            <select>
+              <option value="ALL">ALL</option>
+              <option value="NONE">NONE</option>
+            </select>
+          </h3>
+            </div>
+          
+      <div class = "col-xs-1 p15" id = "step6">
+        <h3>PEO<br>
+          <select>
+            <option value="ALL">ALL</option>
+            <option value="NONE">NONE</option>
+          </select>
+        </h3>
+            </div>
+            
+      
+            <div class ="p10"></div>
+                                                               <!-- RADIO BUTTONS -->
+            
+     
+      <div class = "col-xs-1 col-xs-offset-4 p15" id="step7"> 
+        <form>
+          <h3>
+            <input type="radio" name="CHOICE" value="Summary" checked> Summary<br>
+          </h3>
+          </div>
+        
+      <div class = "col-xs-1 p15" id= "step8" >
+        <h3>
+          <input type="radio" name="CHOICE" value="Phase"> Phase II<br>
+        </h3>
+        </form>
+        </div>
+
+                                                                      <!-- HOME BUTTON-->
+       
+      <div class = "col-xs-1 p15" id="step9">
+        <h3>
+         <button class="w3-button w3-black">Home</button>
+          </h3>
+            </div>
+            
+        
+            
+        </ul>
+      </nav> 
+    </div>
+  </div> <!-- HEADER -->
+</header>
+  
+
+
+
+  
+<div class="container-fluid">
+  <div class="row content whocares">
+                                                     <!-- DASHBOARD POSITION RIGHT -->
+    <div class="col-sm-4 sidenav hidden-xs p40 border" id="step10">
+      
+                                                        <!-- LINE GRAPH 1 -->
+      <div class = "row" id="step11">
+        <div class="canvas-container row" style = "width:640px; height:600px; margin-top: -60px;">
+            <canvas id="line1"></canvas></div></div>
+      
+                                                        <!-- BAR GRAPH 1 -->
+      <div class = "row" id="step12"><div class="canvas-container row " style = "width:640px; height:600px; margin-top: -160px;">
+            <canvas id="bar"></canvas>
+        </div></div>
+      
+      
+                                                        <!-- LINE GRAPH 2 -->
+      <div class = "row" id="step13"><div class="canvas-container row " style = "width:640px; height:600px; margin-top: -160px;">
+            <canvas id="line2"></canvas>
+        </div></div>
+  
+                                                      <!-- PRINT BUTTON -->
+      <div id = "step21"> <h3>
+         <button class="w3-button w3-black" id ="intro">Print Dashboard</button>
+          </h3></div>
+    </div> <!-- END DASHBOARD -->
+
+    
+                                                  <!-- LEFT PLACEHOLDER -->
+      <div class="col-sm-8 p60">
+      
+                                                       <!--Search Table-->
+        <div class="well border" id="step14">                                        
+      <div class = " table" >
+      <table id="searchTable" class="display" cellspacing="0" width = "100%" >
+        <caption align = "top"><span class ="title">Portfolio Detail</span></caption>
+        <thead>
+            <tr>
+                <th>PEO</th>
+                <th>PMA</th>
+                <th>FY</th>
+                <th>Phase I Count</th>
+                <th>Phase I Amount($K)</th>
+              <th>Phase II Count</th>
+              <th>Phase II Amount ($K)</th>
+              <th>Phase II.5 Count</th>
+              <th>Phase II.5 Amount ($K)</th>
+              <th>Total Count</th>
+              <th>Total Amount ($K)</th>
+              <th>GOVT NON SBIR Count</th>
+              <th>GOVT NON SBIRAmount ($K)</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <th>PEO</th>
+                <th>PMA</th>
+                <th>FY</th>
+                <th>Phase I Count</th>
+                <th>Phase I Amount($K)</th>
+              <th>Phase II Count</th>
+              <th>Phase II Amount ($K)</th>
+              <th>Phase II.5 Count</th>
+              <th>Phase II.5 Amount ($K)</th>
+              <th>Total Count</th>
+              <th>Total Amount ($K)</th>
+              <th>GOVT NON SBIR Count</th>
+              <th>GOVT NON SBIRAmount ($K)</th>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <td data-search="1.0">1.0</td>
+                <td>ALL PMAS</td>
+                <td>ALL FYS</td>
+                <td>SBIR/STTR</td>
+                <td>92000</td>
+                <td>201</td>
+                <td>92000</td>
+                <td>201</td>
+                <td>92000</td>
+                <td>201</td>
+                <td>92000</td>
+                <td>201</td>
+                <td>92000</td>
+            </tr>
+            <tr>
+                <td data-search="JSF">JSF</td>
+                <td>ALL PMAS</td>
+                <td>ALL FYS</td>
+                <td>SBIR/STTR</td>
+                <td>92000</td>
+                <td>201</td>
+                <td>92000</td>
+                <td>201</td>
+                <td>92000</td>
+                <td>201</td>
+                <td>92000</td>
+                <td>201</td>
+                <td>92000</td>
+            </tr>
+            <tr>
+                <td data-search="OTHER">0THER</td>
+                <td>ALL PMAS</td>
+                <td>ALL FYS</td>
+                <td>SBIR/STTR</td>
+                <td>92000</td>
+                <td>201</td>
+                <td>92000</td>
+                <td>201</td>
+                <td>92000</td>
+                <td>201</td>
+                <td>92000</td>
+                <td>201</td>
+                <td>92000</td>
+            </tr>
+            <tr>
+                <td data-search="PEO(A)">PEO(A)</td>
+                <td>ALL PMAS</td>
+                <td>ALL FYS</td>
+                <td>SBIR/STTR</td>
+                <td>92000</td>
+                <td>201</td>
+                <td>92000</td>
+                <td>201</td>
+                <td>92000</td>
+                <td>201</td>
+                <td>92000</td>
+                <td>201</td>
+                <td>92000</td>
+            </tr>
+            <tr>
+                <td data-search="PEO(T)">PEO(T)</td>
+                <td>ALL PMAS</td>
+                <td>ALL FYS</td>
+                <td>SBIR/STTR</td>
+                <td>92000</td>
+                <td>201</td>
+                <td>92000</td>
+                <td>201</td>
+                <td>92000</td>
+                <td>201</td>
+                <td>92000</td>
+                <td>201</td>
+                <td>92000</td>
+            </tr>
+            <tr>
+                <td data-search="PEO(UW)">PEO(UW)</td>
+                <td>ALL PMAS</td>
+                <td>ALL FYS</td>
+                <td>SBIR/STTR</td>
+                <td>92000</td>
+                <td>201</td>
+                <td>92000</td>
+                <td>201</td>
+                <td>92000</td>
+                <td>201</td>
+                <td>92000</td>
+                <td>201</td>
+                <td>92000</td>
+            </tr>
+            </tbody>
+    </table>  
+    </div>  <!--END Table-->
+      </div>  <!--END WELL-->
+        
+        
+                                                       <!--IMPORTANT MESSAGEBOX-->
+        <div class="row" id="step15">
+        <div class="col-sm-12 p60">
+          <div class="well border background">                                            
+      <div id = "message">
+        1) Figures reflect topics with shared endorsements / interest. Therefore the summary totals below are not a cumulative representation of the figures above.<BR> 2) The sources of all non SBIR activity currently displayed in the Dashboard is PMDB. Future phases of the dashboard may include additional data sources. If the Non SBIR activity is not recorded in PHDB, it will not be displayed in the Dashboard.</div>
+          </div>
+        </div>
+        </div>
+          
+          
+                            <!--SUMMARY TABLE-->
+           <div class="row" id="step16">
+        <div class="col-sm-12 p60 ">
+          <div class="well border">
+      <div class = "  table">
+       <table id = "table2" class="display" cellspacing="0" width = "100%">
+         <caption><span class = "title">Portfolio Summary</span></caption>
+        <thead>
+            <tr>
+                <th>PEO</th>
+                <th>PMA</th>
+                <th>FY</th>
+                <th>Phase I Count</th>
+                <th>Phase I Amount($K)</th>
+              <th>Phase II Count</th>
+              <th>Phase II Amount ($K)</th>
+              <th>Phase II.5 Count</th>
+              <th>Phase II.5 Amount ($K)</th>
+              <th>Total Count</th>
+              <th>Total Amount ($K)</th>
+              <th>GOVT NON SBIR Count</th>
+              <th>GOVT NON SBIRAmount ($K)</th>
+            </tr>
+        </thead>
+         <tbody>
+           <tr>
+                <td data-search="JSF">JSF</td>
+                <td>ALL PMAS</td>
+                <td>ALL FYS</td>
+                <td>SBIR/STTR</td>
+                <td>92000</td>
+                <td>201</td>
+                <td>92000</td>
+                <td>201</td>
+                <td>92000</td>
+                <td>201</td>
+                <td>92000</td>
+                <td>201</td>
+                <td>92000</td>
+            </tr>
+         </tbody>
+        </table> 
+                                      <!-- SUMMARY TABLE END -->
+      </div>
+          </div>
+        </div>
+          </div>
+        
+          
+                                                        <!-- CONTAINER -->
+        <div class="row" id="step17">
+        <div class="col-sm-12 p60">
+          <div class="well border" style="height:450px;">
+            <div class = "row">
+              
+                                                        <!-- US MAP -->
+              <div class ="col-sm-4 p20" id="step18">
+                <span id ="title3">Phase I, II and II.5 Awards - ALL PEOs</span>
+                <div id="MAP"></div></div>
+             
+                                                        <!-- MULTIPLE BAR GRAPH -->
+               <div class ="col-sm-4 p20" id="step19">
+                <div class="canvas-container row" style = "width:520px; height:600px; margin-left:-80px; margin-top: -100px;">
+            <canvas id="multipleBar"></canvas></div></div>
+              
+                                                        <!-- LINE GRAPH 3 -->
+               <div class ="col-sm-4 p20" id="step20">
+                <div class="canvas-container row" style = "width:520px; height:600px;  margin-left:-80px; margin-top: -100px;">
+            <canvas id="line3"></canvas></div>
+              </div></div>
+          </div> <!--  END CONTAINER -->
+        
+                        <!-- SCRAPS -->
+        </div>
+    </div>
+    </div>
+        </div>
+      </div> 
+  </div>
+</div>
+
+
+<script src ="jQuery-3.2.1.min\jquery-3.2.1.min.js"></script>
+  
+
+  <script src = "bootstrap-3.3.7\dist\js\bootstrap.js"></script>
+   <script src ="bootstrap-3.3.7\dist\js\bootstrap.min.js"></script>
+
+ <script src ="jQuery-DataTables\datatables.js"></script>
+ <script src ="jQuery-DataTables\datatables.min.js"></script>
+
+ <script src ="Chart.js-2.5.0\dist\Chart.bundle.js"></script>
+ <script src ="Chart.js-2.5.0\dist\Chart.bundle.min.js"></script>
+ <script src ="Chart.js-2.5.0\dist\Chart.js"></script>
+ <script src ="Chart.js-2.5.0\dist\Chart.min.js"></script>
+
+ <script type="text/javascript" src="intro.js-2.5.0\intro.js"></script>
+
+   <script src ="https://www.gstatic.com/charts/loader.js"></script>
+
+
+ <script src = "script.js"></script>
+
+
+
+
+</body>
+
+
+
+
+
+
+</html>
