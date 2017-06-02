@@ -1,0 +1,189 @@
+body{
+  background-color: white;
+}
+
+.margin-bot{
+  margin-bottom: 15px;
+}
+h1{
+  color: white;
+  padding-top:10px;
+}
+
+.paddingUp{
+  padding-top: 23px;
+}
+
+.placeholder{
+  height: 150px;
+  width: 200px;
+  margin-top: 20px;
+}
+
+#placeholderImage{
+  height: 150px;
+  width: 200px;
+}
+
+.container{
+ height: 100%;
+  width: 100%;
+  text-align: center;
+ 
+ 
+}
+
+.row{
+}
+ 
+#moveME{
+  margin-top: -13px;
+  color: #3498DB;
+}
+
+#title{
+  color: white;
+}
+
+#image{
+  height: 85px;
+  width: 80px;
+  border-radius: 40px;
+  padding-top:15px;
+  text-align: left;
+}
+
+h7{
+  font-size: 80px;
+  font-family: Monospace;
+  color: white;
+  text-align: center;
+  padding-top 20px;
+}
+
+ul{
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  margin-left: -2px;
+  margin-right: -1px;
+  overflow: hidden;
+  background-color: #333;
+  height: 100px;
+  
+}
+
+li{
+  display:block;
+  float: right;
+  border-left: 1px solid #3498DB;
+}
+
+.resizeImage{
+  margin-top: 60px;
+  height:300px;
+  width: 300px;
+  border-style: solid;
+  border-size: 1px;
+  border-radius: 10px;
+  text-align:center;
+}
+
+li a{
+  display: block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  padding: 40px 10px 40px 10px;
+  width: 100px;
+}
+
+
+li a:hover {
+  background-color: #111;
+  color: #3498DB;
+}
+
+.About{
+  margin-top: -22px;
+  height: 240px;
+  
+  background-color: grey;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+  
+
+  
+.Projects{
+  height: 360px;
+  background-color: #CCD1D1;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.Portfolio{
+  height: 360px;
+  background-color: grey;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#divider1{
+  height:300px;
+  background-color: red;
+}
+
+
+.divider{
+  padding-top: 120px;
+}
+
+#divider2{
+  height:300px;
+  background-color: white;
+}
+
+#divider3{
+  height:300px;
+  background-color: blue;
+}
+  
+
+.Contact{
+  height: 200px;
+  background-color: black;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+button{
+  color: turquoise;
+}
+
+.deep{
+  width: 90%;
+  height: 90%;
+}
+
+.btn{
+  background-color: grey;
+}
+
+h3{
+  font-size: 50px;
+  color: green;
+}
+h5{
+  font-size: 30px;
+  color: green;
+}
+
+.padding{
+  padding-bottom: 100px;
+}
+
