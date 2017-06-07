@@ -1,195 +1,107 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
 
-  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-
-  <link rel="stylesheet" type="text/css" href="css/main.css">
-
-
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ <link rel="stylesheet" href="main.css">
 </head>
-
-
-
-
 <body>
 
-<div class ="main">
-<div class ="container">
-  
-<!--Navigation Bar-->
-
-<div>
- <div class ="row">
-  <nav class ="navbar " id="scroll">
-    <ul>
-       <div class = "col-xs-1"><img src ="http://www.k6-geometric-shapes.com/image-files/project.jpg" id="image" alt ="Jesus"></div>
-      <div class = "col-xs-3 col-xs-offset-1">
-        <div class = "row"><h1><span id = "title">Cody Maheu</span></h1></div>
-        <div class = "row" id = "moveME"><span >CodyMaheuImportant@gmail.com</span></div>
-      </div>
-      
-      <div class = "col-xs-5 col-xs-offset-2">
-      <div ><li><a href ="#Contact">Contact</a></li></div>
-      <div  ><li><a href ="#Portfolio">Portfolio</a></li></div>
-      <div ><li><a href ="#Projects">Projects</a></li></div>
-      <div ><li><a href ="#About" class ="active" >About Me</a></li></div>
-      </div>
-    </ul>
-  </nav>  
-</div>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">Home</a>
+  <a href="#">About</a>
+  <a href="projects.html">Projects</a>
+  <a href="#">Hire Me</a>
 </div>
 
-<!--About Me-->
 
-<div class ="About row" id="About">
-  
-  <div class = "row paddingUp">
-    <div class = "col-xs-4">
-    <img src="https://placehold.it/300" alt="placeholder" id="placeholderImage" width="100%"></img>
-    
-    <div class = "row" style = "padding-top: 10px;"><a href="https://www.linkedin.com/in/sunny-zhou-578976a9" class="btn btn-default">
-          <i class="fa fa-file-pdf-o"></i> Resume
-        </a></div>
-    </div>
-    
-  <div class = "aboutMe col-xs-7">
-  blah blah blah blah blah blah blah blah blah blah blah blahblah blah blah blah blah blahblah blah blah blah blah blahblah blah blah blah blah blahblah blah blah blah blah blahblah blah blah blah blah blahblah blah blah blah blah blahblah blah blah blah blah blahblah blah blah blah blah blahblah blah blah blah blah blahblah blah blah blah blah blahblah blah blah blah blah blahblah blah blah blah blah blahblah blah blah blah blah blahblah blah blah blah blah blahblah blah blah blah blah blahblah blah blah blah blah blahblah blah blah blah blah blahblah blah blah blah blah blahblah blah blah blah blah blahblah blah blah blah blah blahblah blah blah blah blah blahblah blah blah blah blah blah
-   
-  </div>
-  </div>
-  
+
+<div class = "row">
+<div class = "col-xs-11"></div>
+  <div class = "col-xs-1" id="btnMenu"><span style="font-size:50px;cursor:pointer" onclick="openNav()">&#9776;</span></div>
 </div>
- 
-  
-<!--Projects-->
-  
-<div class ="Projects row" id="Projects">
-  
-  
 
-  <div class = "row paddingUp">
-    <div class = "col-xs-2"></div>
-    <div class = "col-xs-8">
-      
-      <div class = "row">
-          <a href="#">
-            <div class = "col-xs-4">
-              <div class ="thumbnail">
-                <a href="https://ibb.co/kOncca"><img src="https://thumb.ibb.co/kOncca/portfolio.png" alt="portfolio" border="0" /></a>
-              <div class = "caption">
-                <h4>Project name</h4>
-                <p>More coming soon...</p>
-              </div>
-            </div>
-            </div> 
-        </a>
-      
-      
-              <a href="#">
-            <div class = "col-xs-4">
-              <div class ="thumbnail">
-                <img src="https://placehold.it/300" alt="placeholder" class="placeholder" width="100%"></img>
-              <div class = "caption">
-                <h4>Project name</h4>
-                <p>More coming soon...</p>
-              </div>
-            </div>
-            </div> 
-        </a>          <a href="#">
-            <div class = "col-xs-4">
-              <div class ="thumbnail">
-                <img src="https://placehold.it/300" alt="placeholder" class="placeholder" width="100%"></img>
-              <div class = "caption">
-                <h4>Project name</h4>
-                <p>More coming soon...</p>
-              </div>
-            </div>
-            </div> 
-        </a>
-  </div>
-    </div>
-    <div class = "col-xs-2"></div>
-  </div>
 
-  
-  
-  
-  </div>
-  
-  
-  
- 
-<!---Portfolio-->
+<div id = "main">
 
-<div class ="Portfolio row" id="Portfolio">
- 
-  <div class = "row"><h1>Web and Programming</h1></div>
-  
+
+
+
+<div class = "centerElement">
   <div class = "row">
-    <div class = "col-xs-4" id = "divider1"><div class = "divider">
-      HTML/CSS/Javascript Programs</div>
+    <div class = "col-xs-4"><a href="http://placeholder.com"><img src="http://via.placeholder.com/175x125"></a></div>
+    <div class = "col-xs-8">
+      <h1>Cody Maheu</h1>
+      <h4>Entry Level Developer</h4>
     </div>
-     <div class = "col-xs-4" id = "divider2"><div class = "divider">
-     Java Programs</div>
-    </div>
-    <div class = "col-xs-4"id = "divider3"><div class = "divider">
-     Visual Basic Programs</div>
-    </div>
-  </div>
-  
-  
-    
-  
-  
-  </div>
-
-
-  
-<!---Contact-->
-  <div class ="Contact row" id="Contact">
-    <div class = "row paddingUp">
-      
-      <div class = "col-xs-2"></div>
-      
-      <div class = "col-xs-2"><a href="https://www.linkedin.com/in/cody-maheu-81bb0913b/" class="btn btn-default btn-lg">
-          <i class="fa fa-linkedin fa-lg"></i> Linkedin
-        </a></div>
-      
-      <div class = "col-xs-2"><a href="https://github.com/AbradolfLinclr" class="btn btn-default btn-lg">
-          <i class="fa fa-github fa-lg"></i> Github
-        </a></div>
-      
-      <div class = "col-xs-2"> 
-        <a href="https://codepen.io/Abradolf_Linclr/" class="btn btn-default btn-lg">
-          <i class="fa fa-codepen fa-lg"></i> Codepen
-        </a></div>
-      
-      <div class = "col-xs-2"><a href="https://www.freecodecamp.com/abradolflinclr" class="btn btn-default btn-lg">
-          <i class="fa fa-fire fa-lg"></i> freeCodeCamp
-        </a></div>
-      
-      <div class = "col-xs-2"></div>
-    </div>
-    
-  
 </div>
-  
-  
+
+<hr>
+
+<br><p>Hello, thank you for visiting my site! I am an entry level web & software developer from San Diego, California.  <br><br>  Have a look through some of my <a href="projects.html"> projects</a>. Need help with an upcoming project or application? Learn a bit more <a href = "#"> about me</a> and then consider <a href = "#"> hiring me</a>.</p> <br>
+
+<hr>
+
+<div class = "row">
+  <div class = "col-xs-4 padding">
+    <ul>
+      <br>
+      <li><a href="https://www.linkedin.com/in/cody-maheu-81bb0913b/" class="btn btn-default btn-lg" title="Visit my LinkedIn profile"><i class="fa fa-linkedin fa-lg"></i>  Linkedin</a></li>
+      <li><a href="https://github.com/AbradolfLinclr" class="btn btn-default btn-lg" title="Check out my Github profile"><i class="fa fa-github fa-lg"></i>  Github</a></li>
+      <li><a href="https://codepen.io/Abradolf_Linclr/" class="btn btn-default btn-lg" title="Look through my Codepen"><i class="fa fa-codepen fa-lg"></i>  Codepen</a></li>
+      <br>
+    </ul>
+  </div>
+  <div class = "col-xs-4 ">
+    <ul>
+      <br>
+      <li><a href="https://www.freecodecamp.com/abradolflinclr" class="btn btn-default btn-lg" title="Follow my freeCodeCamp Map"><i class="fa fa-fire fa-lg"></i>  freeCodeCamp</a></li>
+      <li><a href="skype:abradolf_linclr" class="btn btn-default btn-lg" rel="nofollow" target="_blank" title="Call me on Skype"><i class="fa fa-skype"></i>  Skype</a></li>
+      <br>
+    </ul>
+  </div>
+  <div class = "col-xs-4">
+    <ul>
+      <br>
+      <li><a href="https://stackoverflow.com/users/7754306/abradolf-linclr" class="btn btn-default btn-lg" rel="nofollow" target="_blank" title="Visit my StackOverflow profile"><i class="fa fa-stack-overflow" aria-hidden="true"></i>  Stack Overflow</a></li>
+      <li> <a href="mailto:CodyMaheuImportant@gmail.com" class="btn btn-default btn-lg" rel="nofollow" target="_blank" title="Send me an email"><i class="fa fa-envelope" aria-hidden="true"></i> Email</a></li>
+      <br>
+    </ul>
+  </div>
+  </div>
+  <hr>
+</div>
+
+</div>
+
+
+
+
+    
+        
+
      
-<!--End Container / Main-->
 
-  </div>
-  </div>
+        
+
+          
+
+       
 
 
 
-  <script src ="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src = "https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-  <script src = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
- 
+
+
+
+
+
+<script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js'></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type='text/javascript' src='jscript.js'></script>
+
+     
 </body>
-
-</html>
+</html> 
