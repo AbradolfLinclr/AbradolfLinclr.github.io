@@ -1,0 +1,136 @@
+.row.content {height: 1420px}
+
+ .sidenav {
+      background-color: #f1f1f1;
+      height: 100%;
+     float: right;
+    }
+
+.color{
+  color:#000066;
+}
+
+#message{
+  color:#000066;
+}
+
+.title{
+  color:#000066;
+  font-size: 30px;
+  text-align: center;
+}
+
+th{
+  background-color: grey;
+}
+table, th, td {
+    border: 1px solid black;
+}
+
+.background{
+  background-color: #80b3ff
+}
+
+.border{
+  border: 2px solid #000066;
+}
+
+table{
+  width: 100%;
+}
+
+#title1{
+  text-align: center;
+}
+
+th, td {
+    padding: 5px;
+}
+
+#navbar2{
+  margin: -22px;
+  border-style: solid;
+    border-top:  double white;
+ 
+}
+
+.w3-button{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#yellow{
+  color:yellow;
+}
+
+.whocares{
+  margin-top: 25px;
+}
+
+ul{
+  list-style-type: none;
+  margin: -0px;
+  padding: 0px;
+  overflow: hidden;
+  background-color: #000066;
+  height: 100px;
+  width: 100%;
+}
+
+h3{
+  color: white;
+  text-align:center;
+  font-size: 22px;
+}
+
+h3 button{
+  color:black;
+}
+
+h3 select{
+  color:black;
+}
+
+#block {
+  border: 1px solid white;
+}
+
+h1 {
+  color: white;
+}
+
+h4 {
+  color: white;
+}
+   
+.table{
+  overflow: scroll;
+}
+
+ @media screen and (max-width: 767px) {
+      .row.content {height: auto;} 
+   .p20 { width: 20%
+   }
+   .p15 {
+     width: 15%
+   }
+   .p10 { width: 10%
+   }
+   .p60 {
+     width: 60%
+   }
+   .p40 { width: 40%
+   }
+   
+   .p30 { width: 30%
+   }
+   
+}
+
+
+#color{
+  font-color: black;
+}
+
+
+   
