@@ -1,0 +1,58 @@
+.container-fluid{
+  text-align: center;
+}
+
+header{
+  text-align:center;
+}
+
+
+.box{
+  padding-top: 100px;
+}
+
+#img{
+  background-color:white;
+  color: white;
+}
+
+body {
+  background-image: url("http://img.freepik.com/free-vector/black-and-green-radar_1063-116.jpg?size=338&ext=jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+   -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  
+  
+}
+h1{
+  font-size: 30px;
+  color: white;
+  text-align: center;
+}
+
+
+
+#city{
+  font-size: 30px;
+  color: red;
+}
+
+#temperature{
+  font-size: 30px;
+  color: red;
+}
+
+#description{
+  font-size: 30px;
+  color: red;
+}
+
+#button{
+  font-size: 30px;
+  color: blue;
+}
+
+
+

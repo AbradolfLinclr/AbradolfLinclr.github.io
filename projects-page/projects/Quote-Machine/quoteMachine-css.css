@@ -1,0 +1,89 @@
+@import
+  url(https://fonts.googleapis.com/css?family=Timmana);
+
+i{
+  color: white;
+  
+}
+
+.row {
+  text-align: center;
+}
+.container{
+  text-align: center;
+}
+
+.padding{
+  padding-bottom:20px;
+}
+
+body{
+  background-color: grey;
+}
+
+
+.quotehere{
+  height: auto;
+  text-align: center;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.quotebox{
+  height: 100%;
+  width: 50%;
+  background-color: white;
+  margin: auto;
+  padding-right: 10px;
+  margin-top: 60px;
+  border-radius: 5px;
+}
+
+a{
+  text-decoration: none;
+}
+
+p{
+  text-align: right;
+  padding-right: 40px;
+  margin-bottom: 20px;
+  font-family: Timmana;
+  color: grey;
+}
+
+h1{
+  font-family: Timmana;
+  color: grey;
+}
+
+h3{
+  text-align: center;
+  color: white;
+  font-family: Timmana;
+  style: none;
+  text-decoration: none;
+}
+
+a h3:hover{
+  text-decoration: none;
+}
+
+button{
+  background-color:grey;
+  color: white;
+  padding: 10px;
+}
+
+button:hover {
+  background-color: white;
+  color: grey;
+}
+
+#tweet{
+  font-size:2.0em;
+  padding: 2px;
+  padding-right: 10px;
+  padding-left: 10px;
+  
+}
+
