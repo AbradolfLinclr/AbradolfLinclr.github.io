@@ -18,44 +18,61 @@
 <div class = "row">
   <nav class = "navbar">
     <ul>
-      <div class = "col-xs-1 pic"><a href="../index.html"><img src="http://via.placeholder.com/100x100"></a></div>
+      <div class = "col-xs-1 pic"><a href="../index.html"><img src="images\Snapchat-857258224.jpg" width="80" height="80"></a></div>
       <div class = "col-xs-2 header"><div class = "row title"><h2>Cody Maheu</h2></div><div class = "row subtitle"><h4>Entry Level Developer</h4></div></div>
-      <div class = "col-xs-1 col-xs-offset-8" style="margin-top:20px;"><span style="font-size:50px;cursor:pointer " onclick="openNav()">&#9776;</span></div>
+      <div class = "col-xs-1 col-xs-offset-8" style="margin-top:20px;"><span style="font-size:50px;cursor:pointer "id ="btnMenu" onclick="openNav()">&#9776;</span></div>
     </ul>
   </nav>
 </div>
 
 <div id = "main">
 <div class = "centerElement">
-<h1> Looking for a developer?</h1>
+<h1> For Hire</h1>
 <hr>
-<p>Are you looking for a professional, communicative, and punctual entry level developer that is willing to go the extra yard to get some experience in the field?</p>
 
-<p> Well fortunately for you, I am that guy. Some skills I have to offer are:
-<ul>
-  <li>Knowledge- I understand the value of knowledge. I love to learn and I have the ability to adapt quickly. </li>
-  <li>Collaboration- There's no I in team, but there is me within a team. I enjoy getting multiple perspectives and branching on those around me.</li>
-  <li>Communication- Communication is key. Anyone that has participated in any level of sports knows that nothing gets done according to plan unless we share and converse.</li>
-  <li>Organization- I pride myself in my organizational skills (logs/folders/backups/etc). This also goes hand in hand with timekeeping.</li>
-  <li>Attention to Detail- Did you see that? Because I definately did.</li>
-  <li>Design- I have an appreciation and eye for good design. I can take a mockup to implementation.</li>
-</ul>
+<div class = "row">
+<div class = "col-xs-6"><p>Assuming you have checked out my <a href = "#"> about me</a> page and my <a>projects </a>page, I hope you have a better understanding of who I am and the work I produce. If you think I'm a good fit to your company, why not reach out and send me an email. I look forward to working with you in the future!</p><br>
 
-<p>I am familiar with:</p>
-  <ul>
-    <li>HTML/CSS/Javascript</li>
-    <li>Java</li>
-    <li>.Net</li>
-    <li>Git/Github/Git Bash</li>
-    <li></li>
-  </ul>
+<p>Be sure to check out my cover letter, resume and work history!</p></div>
 
-  <p>Some other weighing factors:</p>
-<ul>
-    <li>Insert resume here</li>
-  </ul>
 
-  <p></p?
+<div class = "col-xs-6">
+  <form method="post" name="myemailform" action ="form-to-email.php">
+    <div>
+      <label for="name">Name:</label><br>
+     <input type="text" id="name" name="user_name" size="45"><br>
+    </div>
+    <div>
+      <label for="email">Email:</label><br>
+      <input type="text" id="email" name="user_email" size="45"><br>
+    </div>
+    <div>
+      <label for="message">Message:</label><br>
+      <textarea type="text" id="message" name="user_message" size="600"></textarea><br>
+    </div>
+    <div>
+      <input type = "submit" value = "Send Form">
+      <input type = "reset" value = "reset">
+    </div>
+
+
+  </form>
+</div>
+</div>
+
+
+<hr>
+
+<div class = "row">
+<div class = "col-xs-4">
+  <a href="#" class="btn btn-default btn-lg" title="Cover Letter"><i class="fa fa-file-pdf-o fa-lg"></i> Cover Letter</a></div>
+<div class = "col-xs-4">
+  <a href="Resume.pdf" target="_blank" class="btn btn-default btn-lg" title="Resume"><i class="fa fa-file-pdf-o fa-lg"></i> Resume</a></div>
+<div class = "col-xs-4">
+  <a href="#" class="btn btn-default btn-lg" title="Work History"><i class="fa fa-file-pdf-o fa-lg"></i> Work History</a></div>
+</div>
+
+
 
 
 

@@ -88,27 +88,52 @@ ul{
 p{
     font-size: 22px;
     color: white;
+    text-shadow:
+    -1px -1px 0 black,
+    1px -1px 0 black,
+    -1px 1px 0 black,
+    1px 1px 0 black;  
 }
 
 h1{
     font-size: 50px;
     color:  #FDB930;
+     text-shadow:
+    -1px -1px 0 black,
+    1px -1px 0 black,
+    -1px 1px 0 black,
+    1px 1px 0 black;  
    }
 
 h4{
     font-size: 26px;
     color:  #FDB930;
+     text-shadow:
+    -1px -1px 0 black,
+    1px -1px 0 black,
+    -1px 1px 0 black,
+    1px 1px 0 black;  
   
 
 }
 
 p a{
     color:  #FDB930;
+     text-shadow:
+    -1px -1px 0 black,
+    1px -1px 0 black,
+    -1px 1px 0 black,
+    1px 1px 0 black;  
 }
 
 p a:hover{
      color: white;
      text-decoration:none;
+      text-shadow:
+    -1px -1px 0 black,
+    1px -1px 0 black,
+    -1px 1px 0 black,
+    1px 1px 0 black;  
 }
 
 #question{

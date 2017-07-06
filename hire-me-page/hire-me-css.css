@@ -1,9 +1,11 @@
 body {
     font-family: "Lato", sans-serif;
+        background-color: black;
 }
 
 .pic{
     margin-left: -20px;
+    padding-top: 20px;
 }
 
 .header{
@@ -25,7 +27,7 @@ body {
     z-index: 10;
     top: 0;
     right: 0;
-    background-color: white;
+    background-color:  #FDB930;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -42,7 +44,7 @@ body {
 }
 
 .sidenav a:hover, .offcanvas a:focus{
-    color: grey;
+    color: white;
 }
 
 .sidenav .closebtn {
@@ -69,6 +71,7 @@ body {
 
 #btnMenu{
     margin-top: 50px;
+        color:  #FDB930;
 }
 
 .main{
@@ -94,8 +97,52 @@ hr {
     display: block;
     height: 1px;
     border: 0;
-    border-top: 1px solid grey;
+    border-top: 1px solid #FDB930;
     margin: 1em 0;
     padding: 0; 
 }
 
+p{
+    font-size: 22px;
+    color: white;
+}
+
+label{
+  font-size: 22px;
+   color:  #FDB930;
+
+}
+
+h1{
+    color:  #FDB930;
+   }
+li{
+    color:  white;
+   }
+
+
+h2{
+    color:  #FDB930;
+   }
+
+h4{
+    color:  #FDB930;
+}
+
+p a{
+    color:  #FDB930;
+}
+
+p a:hover{
+     color: white;
+     text-decoration:none;
+}
+
+input{
+  width:350px;
+}
+
+textarea{
+  width: 350px;
+  height: 100px;
+}
