@@ -1,20 +1,24 @@
 body {
     font-family: "Lato", sans-serif;
-    background-color: black;
+    background: linear-gradient(#3F3F3F,#0F0F0F ) no-repeat center center fixed;
+      -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .sidenav {
     height: 100%;
     width: 0;
     position: fixed;
-    z-index: 1;
+    z-index: 10;
     top: 0;
     right: 0;
-    background-color:  #FDB930;
+    background: linear-gradient(#FDB930,#0F0F0F ) no-repeat center center fixed;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
-    border-left-style: solid ;
+    border-left-style: solid;
 }
 
 
@@ -164,5 +168,11 @@ a span h4:hover{
      left:0;
       width: 100%;
       height: 100%;
+}
+
+.btn{
+    min-width:140px;
+    margin-bottom: 12px;
+
 }
 

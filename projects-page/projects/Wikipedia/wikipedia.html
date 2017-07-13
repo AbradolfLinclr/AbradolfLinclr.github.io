@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="wikipedia-css.css">
+</head>
+<body>
+
+<div class="row">
+	<div class="col-xs-4"></div>
+	<div class="col-xs-4">
+		<div id="searchBar">
+			<form id="form">
+				<input type ="text" id="search" name="search" placeholder="Search..." size="45" required>
+				<input type ="submit" value="GO" id="submit">
+			</form>
+		</div>
+
+		<div id="randomSearch">
+			<a href="https://en.wikipedia.org/wiki/Special:Random" class="btn btn-default btn-lg" target="_blank" title="Click for a Random Wiki">Click for a Random Wikipedia Page</a>
+		</div>
+
+
+	</div>
+	<div class="col-xs-4"></div>
+
+</div>
+
+<div class="row">
+	<div class="col-xs-2"></div>
+	<div class="col-xs-8"><ul id="searchResults"></ul></div>
+	<div class="col-xs-2"></div>
+</div>
+
+
+
+
+
+<script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js'></script>
+<script type='text/javascript' src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>   
+<script type='text/javascript' src='wikipedia-js.js'></script>
+</body>
+</html>

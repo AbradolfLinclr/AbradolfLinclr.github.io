@@ -1,6 +1,10 @@
 body {
-    font-family: "Lato", sans-serif;
-    background-color: black;
+       font-family: "Lato", sans-serif;
+    background: linear-gradient(#3F3F3F,#0F0F0F ) no-repeat center center fixed;
+      -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .pic{
@@ -20,6 +24,10 @@ body {
     margin-top:-20px;
 }
 
+#about{
+    margin-top:180px;
+}
+
 .sidenav {
     height: 100%;
     width: 0;
@@ -27,7 +35,7 @@ body {
     z-index: 10;
     top: 0;
     right: 0;
-    background-color:  #FDB930;
+    background: linear-gradient(#FDB930,#0F0F0F ) no-repeat center center fixed;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -60,14 +68,6 @@ body {
   .sidenav a {font-size: 18px;}
 }
 
-.centerElement {
-  height: 45%;
-  width: 45%;
-  margin: auto;
-  width: 780px;
-  margin-top: 100px;
-  z-index: 1;
-}
 
 #btnMenu{
     margin-top: 50px;
@@ -78,8 +78,9 @@ body {
     z-index: 1;
 }
 #main {
-    transition: margin-right .5s;
+
     padding: 16px;
+    min-width: 100%;
 }
 
 .navbar{
@@ -102,10 +103,6 @@ hr {
     padding: 0; 
 }
 
-.block{
-    width: 600px;
-    margin-left: 40px;
-}
 
 p{
     font-size: 22px;
@@ -129,4 +126,7 @@ p a:hover{
      text-decoration:none;
 }
 
+.btn{
+    min-width:140px;
+}
   

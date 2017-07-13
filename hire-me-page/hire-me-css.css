@@ -1,6 +1,14 @@
 body {
-    font-family: "Lato", sans-serif;
-        background-color: black;
+       font-family: "Lato", sans-serif;
+    background: linear-gradient(#3F3F3F,#0F0F0F ) no-repeat center center fixed;
+      -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.hire{
+  margin-top: 180px;
 }
 
 .pic{
@@ -27,7 +35,7 @@ body {
     z-index: 10;
     top: 0;
     right: 0;
-    background-color:  #FDB930;
+    background: linear-gradient(#FDB930,#0F0F0F ) no-repeat center center fixed;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
