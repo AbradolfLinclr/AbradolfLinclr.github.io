@@ -63,3 +63,12 @@ a:hover{
 	text-decoration: none;
 
 }
+
+.result:hover{
+	border-left-color: #06f;
+	border-left-style: solid;
+	border-left-width: 20px;
+	border-right-color: #f93;
+	border-right-style: solid;
+	border-right-width: 20px;
+}
